@@ -2,20 +2,20 @@
 
 A simple script to expand Twitter's t.co links into their actual URLs.
 
+Best after using commandline utilities for backing up tweets such as [t](https://github.com/sferik/t). 
+
 ## Installation
 
-`brew tap adeluccar/homebrew-utilities`
+`brew tap adeluccar/homebrew-utilities`  
 `brew install unpack-tco-url`
 
 ## Usage
 
-Pass the URL to the command:
-
+Pass the URL to the command:  
 `unpack-tco-url URL`
 
-Or, pipe URLS into the command:
-
-`echo "URL" | unpack-tco-url`
+Or, pipe URLs into the command:  
+`cat file.txt | unpack-tco-url`
 
 The possibilities are endless.
 
@@ -29,12 +29,11 @@ The possibilities are endless.
 
 ## History
 
-2016-06-04 v.0.2.0
+2016-06-04 v.0.2.0  
 2016-06-03 v.0.1.0
 
 ## Credits
 
-Many thanks to user user495470 for his/her solution at:
-http://stackoverflow.com/a/11326239/1253966
-
+Many thanks to user user495470 for his/her solution at:  
+http://stackoverflow.com/a/11326239/1253966  
 The whole script is just a fancy wrapper for that curl call.
