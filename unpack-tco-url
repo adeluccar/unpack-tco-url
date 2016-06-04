@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# $1 input file
+# $2 output file
+
+while read line; do curl -s -o /dev/null --head -w "%{url_effective}\n" -L "$line"; done < "$1" > "$2"
